@@ -5,41 +5,256 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
   <meta name="googlebot" content="noindex, nofollow" />
-  <title>Pacific Aero</title>
-  <meta name="description" content="Pacific Aero" />
+  <title>Pacific Aero Partners</title>
+  <meta name="description" content="Pacific Aero Partners connects Western aerospace manufacturers with qualified Chinese suppliers. Supplier search, AS9100D audits and witnessed first articles, managed from both shores." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Barlow:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500&display=swap" />
   <style>
-    :root { --ink: #0A1F44; --muted: #4A5568; --accent: #F28C28; --bg1: #BFD9F5; --bg2: #F2F8FD; }
-    * { box-sizing: border-box; }
-    html, body { margin: 0; min-height: 100%; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
-      color: var(--ink);
-      background: linear-gradient(180deg, var(--bg1) 0%, #DCEBFA 45%, var(--bg2) 100%);
-      min-height: 100vh;
-      display: flex; align-items: center; justify-content: center;
-      padding: 32px 16px;
+    :root {
+      --navy: #0B2140; --orange: #C8441F; --steel: #55667F; --titanium: #A3AEBD; --mist: #E1E7EE; --cloud: #F5F7FA; --harbor: #1E6E78;
+      --f-display: "Barlow Semi Condensed", "Barlow", "Arial Narrow", sans-serif;
+      --f-ui: "Barlow", system-ui, -apple-system, sans-serif;
+      --f-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+      --f-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+      --f-cjk: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
     }
-    main { max-width: 640px; width: 100%; }
-    .mark { display: flex; align-items: flex-end; gap: 10px; }
-    .mark svg { width: 44px; height: 44px; display: block; }
-    .mark h1 { margin: 0; font-size: 44px; font-weight: 800; letter-spacing: -1.4px; line-height: 1; }
-    .rule { width: 56px; height: 4px; background: var(--accent); margin: 26px 0; border-radius: 2px; }
-    p { font-size: 19px; line-height: 1.55; color: var(--muted); margin: 0 0 14px; }
-    a { color: var(--ink); font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--accent); }
-    footer { margin-top: 40px; font-size: 14px; color: var(--muted); }
-    @media (max-width: 480px) { .mark h1 { font-size: 34px; } p { font-size: 17px; } }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    body { margin: 0; background: var(--cloud); color: var(--navy); font-family: var(--f-body); font-size: 17px; line-height: 1.55; }
+    a { color: inherit; }
+    h1, h2, h3 { font-family: var(--f-display); font-weight: 600; line-height: 1.05; margin: 0; text-wrap: balance; }
+    h2 { font-size: clamp(30px, 4vw, 42px); letter-spacing: -.01em; }
+    h3 { font-size: 22px; }
+    p { margin: 0 0 1em; max-width: 64ch; }
+    .wrap { max-width: 1120px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+    .eyebrow { font: 500 12px/1 var(--f-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--orange); display: block; margin-bottom: 14px; }
+    .lead { font-size: 20px; }
+    .muted { color: var(--steel); }
+    .mono { font-family: var(--f-mono); font-size: .9em; }
+
+    /* lockup */
+    .lockup { display: inline-flex; align-items: center; gap: .55em; font-size: 20px; line-height: 1; text-decoration: none; color: inherit; }
+    .lockup svg { height: 1.9em; width: 2.6em; flex: none; display: block; }
+    .wm { display: flex; flex-direction: column; }
+    .wm-1 { font-family: var(--f-display); font-weight: 600; font-size: 1em; text-transform: uppercase; letter-spacing: .11em; white-space: nowrap; }
+    .wm-2 { font-family: var(--f-display); font-weight: 500; font-size: .5em; text-transform: uppercase; letter-spacing: .44em; margin-top: .32em; white-space: nowrap; padding-left: .06em; }
+
+    /* nav */
+    .nav { position: sticky; top: 0; background: rgba(245,247,250,.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--mist); z-index: 10; }
+    .nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 14px; flex-wrap: wrap; }
+    .nav ul { display: flex; gap: 24px; list-style: none; margin: 0; padding: 0; font-family: var(--f-ui); font-weight: 500; font-size: 14.5px; color: var(--steel); flex-wrap: wrap; }
+    .nav ul a { text-decoration: none; }
+    .nav ul a:hover, .nav ul a:focus-visible { color: var(--navy); }
+    .nav ul li.cta a { color: var(--navy); border-bottom: 2px solid var(--orange); padding-bottom: 2px; }
+
+    /* hero */
+    .hero { padding-block: clamp(56px, 9vw, 120px) 0; overflow: hidden; }
+    .hero h1 { font-size: clamp(38px, 6.4vw, 76px); max-width: 15ch; }
+    .hero .sub { font-size: clamp(18px, 2.2vw, 22px); color: var(--steel); max-width: 56ch; margin-top: 24px; }
+    .hero .rule { width: 72px; height: 4px; background: var(--orange); margin: 28px 0; }
+    .hero .actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; font-family: var(--f-ui); }
+    .btn { display: inline-block; font: 600 13px/1 var(--f-ui); letter-spacing: .08em; text-transform: uppercase; text-decoration: none; padding: 14px 18px; border: 1.5px solid var(--navy); color: var(--navy); }
+    .btn.solid { background: var(--navy); color: #fff; }
+    .btn:hover, .btn:focus-visible { border-color: var(--orange); }
+    .btn.solid:hover, .btn.solid:focus-visible { background: #123059; }
+    .bridge { display: block; width: 100%; height: auto; margin-top: clamp(40px, 6vw, 80px); color: var(--navy); }
+
+    /* sections */
+    section { padding-block: clamp(56px, 8vw, 104px); border-top: 1px solid var(--mist); }
+    .head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); gap: 20px 56px; margin-bottom: 44px; align-items: start; }
+    @media (max-width: 760px) { .head { grid-template-columns: 1fr; } }
+    .grid { display: grid; gap: 20px; }
+    .g3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .g2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    @media (max-width: 900px) { .g3 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 600px) { .g3, .g2 { grid-template-columns: 1fr; } }
+    .card { background: #fff; border: 1px solid var(--mist); padding: 26px; min-width: 0; }
+    .card h3 { margin-bottom: 10px; }
+    .card p { font-size: 16px; margin: 0; max-width: none; }
+    .card .std { font-family: var(--f-mono); font-size: 12.5px; color: var(--steel); margin-top: 16px; letter-spacing: .02em; }
+
+    /* process */
+    .steps { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; border: 1px solid var(--mist); background: #fff; }
+    @media (max-width: 900px) { .steps { grid-template-columns: 1fr; } }
+    .step { padding: 24px 22px; border-right: 1px solid var(--mist); min-width: 0; }
+    .step:last-child { border-right: 0; }
+    @media (max-width: 900px) { .step { border-right: 0; border-bottom: 1px solid var(--mist); } .step:last-child { border-bottom: 0; } }
+    .step .n { font: 500 12px/1 var(--f-mono); color: var(--orange); letter-spacing: .1em; margin-bottom: 14px; display: block; }
+    .step h3 { font-size: 20px; margin-bottom: 8px; }
+    .step p { font-size: 15px; margin: 0; max-width: none; color: var(--steel); }
+    .step .wk { font: 500 12px/1 var(--f-mono); color: var(--titanium); margin-top: 14px; display: block; }
+
+    /* sourcing */
+    .caps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 48px; border-top: 1px solid var(--mist); }
+    @media (max-width: 700px) { .caps { grid-template-columns: 1fr; } }
+    .cap { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--mist); align-items: baseline; font-family: var(--f-ui); }
+    .cap b { font-weight: 600; font-size: 16px; }
+    .cap span { font-family: var(--f-mono); font-size: 12px; color: var(--steel); text-align: right; }
+
+    /* about band */
+    .band { background: var(--navy); color: #fff; }
+    .band section { border-top: 0; }
+    .band .eyebrow { color: #EE6A3A; }
+    .band .muted { color: var(--titanium); }
+    .band blockquote { margin: 0; font-family: var(--f-display); font-weight: 500; font-size: clamp(24px, 3.2vw, 34px); line-height: 1.15; max-width: 22ch; border-left: 3px solid #EE6A3A; padding-left: 22px; }
+    .band .cn { font-family: var(--f-cjk); font-weight: 500; letter-spacing: .3em; color: var(--titanium); margin-top: 28px; font-size: 15px; }
+
+    /* contact */
+    .contact .email { font-family: var(--f-display); font-weight: 600; font-size: clamp(24px, 4vw, 40px); text-decoration: none; border-bottom: 3px solid var(--orange); line-height: 1.1; overflow-wrap: anywhere; }
+    .contact .note { margin-top: 22px; }
+
+    footer { border-top: 1px solid var(--mist); padding-block: 36px 48px; font-family: var(--f-ui); font-size: 14px; color: var(--steel); }
+    footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; align-items: center; }
+    footer .cn { font-family: var(--f-cjk); letter-spacing: .25em; }
+    :focus-visible { outline: 2px solid var(--orange); outline-offset: 3px; }
   </style>
 </head>
 <body>
-  <main>
-    <div class="mark" aria-label="Pacific Aero">
-      <svg viewBox="0 0 100 100" aria-hidden="true"><path d="M0 100 A100 100 0 0 1 100 0 L100 100 Z" fill="#0A1F44"/></svg>
-      <h1>Pacific Aero</h1>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="m-gate" viewBox="0 0 120 80">
+    <g fill="none" stroke="currentColor" stroke-linecap="round">
+      <path d="M20 40.4V56M48 31V56M60 36V56M72 31V56M100 40.4V56" stroke-width="2.2"/>
+      <path d="M4 56H116" stroke-width="4.5"/>
+      <path d="M4 56Q16 50 36 16Q60 56 84 16Q104 50 116 56" stroke-width="4"/>
+    </g>
+    <rect x="33" y="14" width="6" height="52" rx="1" fill="currentColor"/>
+    <rect x="81" y="14" width="6" height="52" rx="1" fill="currentColor"/>
+  </symbol>
+</svg>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="lockup" href="#top" aria-label="Pacific Aero Partners, home">
+      <svg aria-hidden="true"><use href="#m-gate"/></svg>
+      <span class="wm"><span class="wm-1">Pacific Aero</span><span class="wm-2">Partners</span></span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#sourcing">Sourcing</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="cta"><a href="#contact">Start a search</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Aerospace supply chain consulting</span>
+      <h1>Qualified Chinese suppliers for Western aerospace programs.</h1>
+      <p class="sub">We find, audit and manage AS9100-certified sources in China for machined parts, castings, forgings, composites and cabin components, and we stay on the shop floor from first article into production.</p>
+      <div class="rule"></div>
+      <div class="actions">
+        <a class="btn solid" href="#contact">Start a supplier search</a>
+        <a class="btn" href="#process">How an engagement runs</a>
+      </div>
     </div>
-    <div class="rule"></div>
-    <p>Independent consulting for aerospace supply chains: sourcing, supplier quality, and material provenance.</p>
-    <p>Engagements are by introduction. Write to <a href="mailto:contact@pacific-aero.com">contact@pacific-aero.com</a>.</p>
-    <footer>Pacific Aero. This page is not listed in search engines.</footer>
-  </main>
+    <div class="wrap">
+      <svg class="bridge" viewBox="0 0 1200 250" role="img" aria-label="Line drawing of a suspension bridge">
+        <g fill="none" stroke="currentColor" stroke-linecap="round">
+          <path d="M100 152.2V180M200 108.9V180M350 74.4V180M400 94.4V180M450 110V180M500 121.1V180M550 127.8V180M600 130V180M650 127.8V180M700 121.1V180M750 110V180M800 94.4V180M850 74.4V180M1000 108.9V180M1100 152.2V180" stroke-width="2"/>
+          <path d="M0 180H1200" stroke-width="5"/>
+          <path d="M0 180Q150 150 300 50Q600 210 900 50Q1050 150 1200 180" stroke-width="4.5"/>
+          <path d="M0 232H1200" stroke-width="2" stroke-dasharray="1 10" opacity=".55"/>
+        </g>
+        <rect x="293" y="40" width="14" height="168" rx="2" fill="currentColor"/>
+        <rect x="893" y="40" width="14" height="168" rx="2" fill="currentColor"/>
+      </svg>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="eyebrow">Services</span><h2>One firm on both sides of the table</h2></div>
+        <p class="lead muted">Western buyers get a source that has already been walked, audited and measured. Chinese suppliers get a client who speaks their process and shows up in person. We are paid to make the relationship work for years, not to broker one purchase order.</p>
+      </div>
+      <div class="grid g3">
+        <div class="card"><h3>Supplier search and qualification</h3><p>Shortlists built from shop visits, not directories. Capability, capacity, certifications and financial standing checked before you see a name.</p><div class="std">AS9100D · ISO 9001 · NADCAP scope review</div></div>
+        <div class="card"><h3>Readiness audits</h3><p>On-site audits against AS9100D and your own supplier requirements, with a gap report the supplier can act on and a timeline to close it.</p><div class="std">AS9100D clause-by-clause · special processes</div></div>
+        <div class="card"><h3>RFQ and cost benchmarking</h3><p>Technical RFQ packages that Chinese estimators can quote accurately, and should-cost models so you know what a fair number looks like.</p><div class="std">AS9102 FAI planning · DFM feedback</div></div>
+        <div class="card"><h3>First article and production oversight</h3><p>Witnessed first-article inspections, source inspection and lot-release support, with photographs and measured data in every report.</p><div class="std">AS9102 Rev C · Cpk and SPC review</div></div>
+        <div class="card"><h3>Logistics and export-control screening</h3><p>Every program is screened for export-control fit before we begin. We work in the commercial and EAR99 space; ITAR-controlled articles are out of scope by design.</p><div class="std">EAR99 · HTS classification · Incoterms 2020</div></div>
+        <div class="card"><h3>Relationship management</h3><p>A standing presence at the supplier between visits: schedule tracking, engineering-change coordination and the quiet conversations that keep a program on time.</p><div class="std">Monthly supplier scorecards</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sourcing">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="eyebrow">What we source</span><h2>Capability we have stood next to</h2></div>
+        <p class="lead muted">Categories where qualified Chinese capacity is real, certified and ready for Western programs. We decline work in categories where it is not.</p>
+      </div>
+      <div class="caps">
+        <div class="cap"><b>Precision machining, 3- to 5-axis</b><span>Al 7075 · Ti-6Al-4V · Inconel 718</span></div>
+        <div class="cap"><b>Investment and sand castings</b><span>A356 · 17-4PH · AMS 5355</span></div>
+        <div class="cap"><b>Closed-die and ring forgings</b><span>AMS 4911 · AMS 2750 heat treat</span></div>
+        <div class="cap"><b>Composite layup and bonded assemblies</b><span>Prepreg · autoclave · NDI</span></div>
+        <div class="cap"><b>Fasteners and standard hardware</b><span>NAS · MS · AN · DFARS-compliant metals</span></div>
+        <div class="cap"><b>Cabin interiors and monuments</b><span>FAR 25.853 · Boeing BMS flammability</span></div>
+        <div class="cap"><b>Wire harnesses and PCBAs</b><span>IPC/WHMA-A-620 · IPC-A-610 Class 3</span></div>
+        <div class="cap"><b>Tooling, fixtures and ground support</b><span>Cost-driven, short lead</span></div>
+      </div>
+      <p class="muted" style="margin-top:24px;font-size:15px">Standards shown are typical of the supplier base in each category, not a guarantee for any specific part. Scope is confirmed program by program.</p>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="eyebrow">Process</span><h2>A typical qualification runs in five steps</h2></div>
+        <p class="lead muted">Timelines below are for a machined-part family with an established supplier base. Castings, forgings and special processes run longer.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="n">Step 1</span><h3>Scope and screen</h3><p>Part family, volumes, specs and export-control classification confirmed in writing before any supplier is contacted.</p><span class="wk">Week 1</span></div>
+        <div class="step"><span class="n">Step 2</span><h3>Search and shortlist</h3><p>Three to five candidate shops visited. Capability, capacity and certifications verified on site.</p><span class="wk">Weeks 2 to 3</span></div>
+        <div class="step"><span class="n">Step 3</span><h3>Audit</h3><p>AS9100D readiness audit of the preferred supplier, with a gap report and a closure plan.</p><span class="wk">Week 4</span></div>
+        <div class="step"><span class="n">Step 4</span><h3>Quote and first article</h3><p>Technical RFQ, should-cost review, then a witnessed AS9102 first-article inspection on your drawing.</p><span class="wk">Weeks 5 to 8</span></div>
+        <div class="step"><span class="n">Step 5</span><h3>Production oversight</h3><p>Source inspection, lot release and monthly scorecards for as long as the program runs.</p><span class="wk">Ongoing</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band" id="about">
+    <section>
+      <div class="wrap">
+        <div class="head" style="margin-bottom:0">
+          <div><span class="eyebrow">About</span><blockquote>Both shores.<br>One standard.</blockquote><div class="cn" lang="zh-Hans">太平洋航空伙伴</div></div>
+          <div>
+            <p class="lead" style="color:#fff">Pacific Aero Partners was founded on a simple observation: the capability exists in China, the demand exists in the West, and what is missing is someone accountable to both sides who understands the standards.</p>
+            <p class="muted">We write in specifics, not adjectives. Suppliers are named and credited in our reports. Programs that fall outside what we can responsibly support, including anything ITAR-controlled, are declined at the first conversation rather than discovered later.</p>
+            <p class="muted" style="margin:0">Engagements are by introduction. Write to us and we will tell you plainly whether your program is a fit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <span class="eyebrow">Contact</span>
+      <h2 style="margin-bottom:28px">Start a supplier search</h2>
+      <a class="email" href="mailto:contact@pacific-aero.com">contact@pacific-aero.com</a>
+      <p class="note muted">Tell us the part family, approximate annual volume and the applicable specifications. We reply within two business days with a plain answer on fit, scope and timing.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Pacific Aero Partners</span>
+    <span class="cn" lang="zh-Hans">太平洋航空伙伴</span>
+    <span>Commercial and EAR99 programs only. This page is not listed in search engines.</span>
+  </div>
+</footer>
+
 </body>
 </html>
