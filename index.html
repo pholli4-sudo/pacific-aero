@@ -6,7 +6,7 @@
   <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
   <meta name="googlebot" content="noindex, nofollow" />
   <title>Pacific Aero Partners</title>
-  <meta name="description" content="Pacific Aero Partners connects Western aerospace manufacturers with qualified Chinese suppliers. Supplier search, AS9100D audits and witnessed first articles, managed from both shores." />
+  <meta name="description" content="Pacific Aero Partners represents a small number of qualified Chinese manufacturers to US industrial buyers in aerospace, gas turbines, power and energy equipment. Relationships, supplier approval and account stewardship, handled discreetly." />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -113,6 +113,19 @@
     footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; align-items: center; }
     footer .cn { font-family: var(--f-cjk); letter-spacing: .25em; }
     :focus-visible { outline: 2px solid var(--orange); outline-offset: 3px; }
+    /* criteria and fees */
+    .crit { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 48px; border-top: 1px solid var(--mist); }
+    @media (max-width: 700px) { .crit { grid-template-columns: 1fr; } }
+    .crit div { padding: 16px 0; border-bottom: 1px solid var(--mist); font-size: 16px; }
+    .crit b { font-family: var(--f-ui); font-weight: 600; display: block; margin-bottom: 4px; }
+    .fees { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+    @media (max-width: 900px) { .fees { grid-template-columns: 1fr; } }
+    .fee { background: #fff; border: 1px solid var(--mist); padding: 26px; min-width: 0; }
+    .fee h3 { margin-bottom: 8px; }
+    .fee .k { font: 500 12px/1 var(--f-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--orange); display: block; margin-bottom: 14px; }
+    .fee p { font-size: 16px; margin: 0; max-width: none; }
+    .band .cn-block { font-family: var(--f-cjk); font-size: 16px; line-height: 1.9; color: #E7ECF3; margin-top: 28px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.18); max-width: 40em; }
+    .band .cn-block small { display: block; font-family: var(--f-ui); font-size: 12px; color: var(--titanium); letter-spacing: .04em; margin-top: 10px; }
   </style>
 </head>
 <body>
@@ -137,11 +150,11 @@
     </a>
     <nav aria-label="Main">
       <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#sourcing">Sourcing</a></li>
-        <li><a href="#process">Process</a></li>
-        <li><a href="#about">About</a></li>
-        <li class="cta"><a href="#contact">Start a search</a></li>
+        <li><a href="#represent">Who we represent</a></li>
+        <li><a href="#services">What we do</a></li>
+        <li><a href="#process">How an award happens</a></li>
+        <li><a href="#conduct">Conduct</a></li>
+        <li class="cta"><a href="#contact">Enquire</a></li>
       </ul>
     </nav>
   </div>
@@ -150,14 +163,14 @@
 <main id="top">
   <div class="hero">
     <div class="wrap">
-      <span class="eyebrow">Aerospace supply chain consulting</span>
-      <h1>Qualified Chinese suppliers for Western aerospace programs.</h1>
+      <span class="eyebrow">Supplier representation · United States</span>
+      <h1>Winning American awards for China's best manufacturers.</h1>
       <div class="rule"></div>
       <div class="row">
-        <p class="sub">We find, audit and manage AS9100-certified sources in China for machined parts, castings, forgings, composites and cabin components, and we stay on the shop floor from first article into production.</p>
+        <p class="sub">Pacific Aero Partners represents a small number of qualified Chinese suppliers to US industrial buyers in aerospace, gas turbines, power and energy equipment. We build the relationships, carry you through supplier approval, and stay with the account long after the award.</p>
         <div class="actions">
-          <a class="btn solid" href="#contact">Start a supplier search</a>
-          <a class="btn" href="#process">How an engagement runs</a>
+          <a class="btn solid" href="#contact">Enquire about representation</a>
+          <a class="btn" href="#process">How an award happens</a>
         </div>
       </div>
     </div>
@@ -175,80 +188,94 @@
     </div>
   </div>
 
-  <section id="services">
+  <section id="represent">
     <div class="wrap">
       <div class="head">
-        <div><span class="eyebrow">Services</span><h2>One firm on both sides of the table</h2></div>
-        <p class="lead muted">Western buyers get a source that has already been walked, audited and measured. Chinese suppliers get a client who speaks their process and shows up in person. We are paid to make the relationship work for years, not to broker one purchase order.</p>
+        <div><span class="eyebrow">Who we represent</span><h2>A few suppliers, never two that compete</h2></div>
+        <p class="lead muted">American OEMs buy from suppliers they trust, and trust is built in person over years. We put that presence to work for a handful of Chinese manufacturers at a time, and we never represent two suppliers to the same customer for the same commodity.</p>
       </div>
-      <div class="grid g3">
-        <div class="card"><h3>Supplier search and qualification</h3><p>Shortlists built from shop visits, not directories. Capability, capacity, certifications and financial standing checked before you see a name.</p><div class="std">AS9100D · ISO 9001 · NADCAP scope review</div></div>
-        <div class="card"><h3>Readiness audits</h3><p>On-site audits against AS9100D and your own supplier requirements, with a gap report the supplier can act on and a timeline to close it.</p><div class="std">AS9100D clause-by-clause · special processes</div></div>
-        <div class="card"><h3>RFQ and cost benchmarking</h3><p>Technical RFQ packages that Chinese estimators can quote accurately, and should-cost models so you know what a fair number looks like.</p><div class="std">AS9102 FAI planning · DFM feedback</div></div>
-        <div class="card"><h3>First article and production oversight</h3><p>Witnessed first-article inspections, source inspection and lot-release support, with photographs and measured data in every report.</p><div class="std">AS9102 Rev C · Cpk and SPC review</div></div>
-        <div class="card"><h3>Logistics and export-control screening</h3><p>Every program is screened for export-control fit before we begin. We work in the commercial and EAR99 space; ITAR-controlled articles are out of scope by design.</p><div class="std">EAR99 · HTS classification · Incoterms 2020</div></div>
-        <div class="card"><h3>Relationship management</h3><p>A standing presence at the supplier between visits: schedule tracking, engineering-change coordination and the quiet conversations that keep a program on time.</p><div class="std">Monthly supplier scorecards</div></div>
+      <div class="crit">
+        <div><b>Certified quality system</b>ISO 9001 as a minimum. AS9100D for aerospace work, NADCAP for special processes, API or ASME where the buyer's category calls for it.</div>
+        <div><b>Export experience</b>You have shipped to overseas customers before and can document it. A first export should not be an American OEM.</div>
+        <div><b>An English-capable quality team</b>Supplier approval is a documentation exercise. Your quality engineers must be able to answer an American auditor directly.</div>
+        <div><b>Capacity and intent</b>Room to take on new work, and the patience to invest twelve to eighteen months before the first award.</div>
+        <div><b>Commodities we know</b>Precision machining, castings and forgings, fabrications and weldments, composites, fasteners and hardware, harnesses and electrical assemblies, tooling.</div>
+        <div><b>Commercial items only</b>We represent suppliers for commercial and EAR99 work. We do not pursue ITAR-controlled or defense programs, and we say so to buyers before they ask.</div>
       </div>
+      <p class="muted" style="margin-top:24px;font-size:15px">The buyers are US original equipment manufacturers and their Tier 1 suppliers in aerospace, industrial gas turbines and power generation, oil and gas equipment, heavy equipment and rail. We do not publish customer names, ours or yours.</p>
     </div>
   </section>
 
-  <section id="sourcing">
+  <section id="services">
     <div class="wrap">
       <div class="head">
-        <div><span class="eyebrow">What we source</span><h2>Capability we have stood next to</h2></div>
-        <p class="lead muted">Categories where qualified Chinese capacity is real, certified and ready for Western programs. We decline work in categories where it is not.</p>
+        <div><span class="eyebrow">What we do</span><h2>From first introduction to the tenth reorder</h2></div>
+        <p class="lead muted">Winning an American award is a sequence of small, specific tasks spread over a year or more. We do them with you, in the order the buyer expects, and we are the face the buyer sees between your visits.</p>
       </div>
-      <div class="caps">
-        <div class="cap"><b>Precision machining, 3- to 5-axis</b><span>Al 7075 · Ti-6Al-4V · Inconel 718</span></div>
-        <div class="cap"><b>Investment and sand castings</b><span>A356 · 17-4PH · AMS 5355</span></div>
-        <div class="cap"><b>Closed-die and ring forgings</b><span>AMS 4911 · AMS 2750 heat treat</span></div>
-        <div class="cap"><b>Composite layup and bonded assemblies</b><span>Prepreg · autoclave · NDI</span></div>
-        <div class="cap"><b>Fasteners and standard hardware</b><span>NAS · MS · AN · DFARS-compliant metals</span></div>
-        <div class="cap"><b>Cabin interiors and monuments</b><span>FAR 25.853 · Boeing BMS flammability</span></div>
-        <div class="cap"><b>Wire harnesses and PCBAs</b><span>IPC/WHMA-A-620 · IPC-A-610 Class 3</span></div>
-        <div class="cap"><b>Tooling, fixtures and ground support</b><span>Cost-driven, short lead</span></div>
+      <div class="grid g3">
+        <div class="card"><h3>Readiness review</h3><p>A frank assessment of where you stand against the buyer's supplier requirements before anyone is introduced: certifications, capacity, documentation, pricing position and the gaps to close first.</p><div class="std">Written report · 2 weeks</div></div>
+        <div class="card"><h3>Account targeting and introductions</h3><p>Which American buyers actually source your commodity, who decides, and what they are short of. Introductions made in person to sourcing, supplier quality and engineering, with your capability presented in their language.</p><div class="std">Target list · in-person meetings</div></div>
+        <div class="card"><h3>Supplier approval</h3><p>Supplier surveys, self-assessments, document packages and on-site audit preparation. We rehearse the audit with your team and attend it, so nothing is lost in translation.</p><div class="std">AS9100D · ISO 9001 · customer supplier manuals</div></div>
+        <div class="card"><h3>RFQ and quoting</h3><p>RFQ packages explained, drawings and specifications clarified with the buyer, design-for-manufacture feedback returned the way American engineers expect, and quotes positioned to win without leaving money behind.</p><div class="std">Landed cost · HTS and Section 301 tariffs · Incoterms 2020</div></div>
+        <div class="card"><h3>First article and award</h3><p>AS9102 or PPAP first-article planning, witnessed inspections, and negotiation of long-term agreement terms, payment terms and tooling ownership before you sign.</p><div class="std">AS9102 Rev C · PPAP · LTA terms</div></div>
+        <div class="card"><h3>Account stewardship</h3><p>After the award we stay on the account: delivery tracking, quality escapes handled fast and honestly, quarterly reviews with the buyer, and the next RFQ before it goes to your competitors.</p><div class="std">Monthly scorecard · quarterly business review</div></div>
       </div>
-      <p class="muted" style="margin-top:24px;font-size:15px">Standards shown are typical of the supplier base in each category, not a guarantee for any specific part. Scope is confirmed program by program.</p>
     </div>
   </section>
 
   <section id="process">
     <div class="wrap">
       <div class="head">
-        <div><span class="eyebrow">Process</span><h2>A typical qualification runs in five steps</h2></div>
-        <p class="lead muted">Timelines below are for a machined-part family with an established supplier base. Castings, forgings and special processes run longer.</p>
+        <div><span class="eyebrow">How an award happens</span><h2>Twelve to eighteen months, honestly stated</h2></div>
+        <p class="lead muted">No American OEM awards production work to a new overseas supplier in a quarter. This is the realistic path for a machined-part or casting supplier with its certifications already in place.</p>
       </div>
       <div class="steps">
-        <div class="step"><span class="n">Step 1</span><h3>Scope and screen</h3><p>Part family, volumes, specs and export-control classification confirmed in writing before any supplier is contacted.</p><span class="wk">Week 1</span></div>
-        <div class="step"><span class="n">Step 2</span><h3>Search and shortlist</h3><p>Three to five candidate shops visited. Capability, capacity and certifications verified on site.</p><span class="wk">Weeks 2 to 3</span></div>
-        <div class="step"><span class="n">Step 3</span><h3>Audit</h3><p>AS9100D readiness audit of the preferred supplier, with a gap report and a closure plan.</p><span class="wk">Week 4</span></div>
-        <div class="step"><span class="n">Step 4</span><h3>Quote and first article</h3><p>Technical RFQ, should-cost review, then a witnessed AS9102 first-article inspection on your drawing.</p><span class="wk">Weeks 5 to 8</span></div>
-        <div class="step"><span class="n">Step 5</span><h3>Production oversight</h3><p>Source inspection, lot release and monthly scorecards for as long as the program runs.</p><span class="wk">Ongoing</span></div>
+        <div class="step"><span class="n">Step 1</span><h3>Readiness review</h3><p>Certifications, capacity and documentation assessed against the target buyers' supplier requirements. Gaps closed before any introduction.</p><span class="wk">Weeks 1 to 2</span></div>
+        <div class="step"><span class="n">Step 2</span><h3>Targets and introductions</h3><p>Three to five buyers selected. In-person introductions to sourcing and supplier quality. Capability presentation and plant video reviewed by their engineers.</p><span class="wk">Months 1 to 3</span></div>
+        <div class="step"><span class="n">Step 3</span><h3>Supplier approval</h3><p>Supplier survey, document package and on-site audit. We prepare your team, attend the audit and manage the corrective actions.</p><span class="wk">Months 3 to 6</span></div>
+        <div class="step"><span class="n">Step 4</span><h3>RFQ, first article, award</h3><p>Quotes on the buyer's first packages, first-article inspection witnessed, long-term agreement negotiated and signed.</p><span class="wk">Months 6 to 12</span></div>
+        <div class="step"><span class="n">Step 5</span><h3>Stewardship</h3><p>Deliveries tracked, issues handled in the buyer's time zone, quarterly reviews held, and the next package pursued.</p><span class="wk">Ongoing</span></div>
       </div>
     </div>
   </section>
 
-  <div class="band" id="about">
+  <div class="band" id="conduct">
     <section>
       <div class="wrap">
         <div class="head" style="margin-bottom:0">
-          <div><span class="eyebrow">About</span><blockquote>Both shores.<br>One standard.</blockquote><div class="cn" lang="zh-Hans">太平洋航空伙伴</div></div>
+          <div><span class="eyebrow">Discretion and conduct</span><blockquote>Both shores.<br>One standard.</blockquote><div class="cn" lang="zh-Hans">太平洋航空伙伴</div></div>
           <div>
-            <p class="lead" style="color:#fff">Pacific Aero Partners was founded on a simple observation: the capability exists in China, the demand exists in the West, and what is missing is someone accountable to both sides who understands the standards.</p>
-            <p class="muted">We write in specifics, not adjectives. Suppliers are named and credited in our reports. Programs that fall outside what we can responsibly support, including anything ITAR-controlled, are declined at the first conversation rather than discovered later.</p>
-            <p class="muted" style="margin:0">Engagements are by introduction. Write to us and we will tell you plainly whether your program is a fit.</p>
+            <p class="lead" style="color:#fff">We work quietly. We do not publish who we represent or who buys from them, we sign non-disclosure agreements as a matter of course, and we never represent competing suppliers to the same customer.</p>
+            <p class="muted">We are paid by the suppliers we represent, on a monthly retainer and a disclosed commission on awarded business, agreed in writing before we start. We take no payment from buyers, we give nothing of value to buyer personnel, and every agreement we sign carries anti-corruption representations and audit rights. American compliance departments are welcome to ask us about any of this directly.</p>
+            <p class="muted" style="margin:0">Engagements are by introduction. Write to us and we will tell you plainly whether we can represent you.</p>
+            <div class="cn-block" lang="zh-Hans">太平洋航空伙伴为少数经过严格筛选的中国制造企业提供在美国市场的代表服务，客户覆盖航空航天、燃气轮机、电力与能源装备等行业的美国整机厂与一级供应商。我们负责建立并维护客户关系，协助完成供应商审核与准入，并在获得订单后持续跟进。保密与合规是我们的工作底线。<small>中文为摘要，以英文为准。</small></div>
           </div>
         </div>
       </div>
     </section>
   </div>
 
+  <section id="fees">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="eyebrow">How we are paid</span><h2>A retainer for the work, a commission for the result</h2></div>
+        <p class="lead muted">Representation that is paid only on commission tends to chase the easiest order rather than the right customer. Ours is structured so that we are paid to do the work properly, and rewarded when it leads to awards.</p>
+      </div>
+      <div class="fees">
+        <div class="fee"><span class="k">Fixed fee</span><h3>Readiness review</h3><p>A two-week assessment with a written report you can act on whether or not we go on to represent you.</p></div>
+        <div class="fee"><span class="k">Monthly retainer</span><h3>Representation</h3><p>Covers account targeting, introductions, supplier approval support, quoting and in-person presence at the buyer. Reported monthly in writing.</p></div>
+        <div class="fee"><span class="k">Disclosed commission</span><h3>On awarded business</h3><p>A single-digit percentage of invoiced sales under agreements we helped win, declared to the buyer on request and stepping down as volume grows.</p></div>
+      </div>
+      <p class="muted" style="margin-top:24px;font-size:15px">Fee schedule and a sample representation agreement are provided on request after an initial conversation.</p>
+    </div>
+  </section>
+
   <section id="contact" class="contact">
     <div class="wrap">
       <span class="eyebrow">Contact</span>
-      <h2 style="margin-bottom:28px">Start a supplier search</h2>
+      <h2 style="margin-bottom:28px">Enquire about representation</h2>
       <a class="email" href="mailto:contact@pacific-aero.com">contact@pacific-aero.com</a>
-      <p class="note muted">Tell us the part family, approximate annual volume and the applicable specifications. We reply within two business days with a plain answer on fit, scope and timing.</p>
+      <p class="note muted">Tell us your commodity, your certifications, and the American customers you have in mind. We reply within two business days with a plain answer on whether, and how, we can represent you. Enquiries from American buyers looking for qualified capacity are equally welcome.</p>
     </div>
   </section>
 </main>
@@ -257,7 +284,7 @@
   <div class="wrap">
     <span>Pacific Aero Partners</span>
     <span class="cn" lang="zh-Hans">太平洋航空伙伴</span>
-    <span>Commercial and EAR99 programs only. This page is not listed in search engines.</span>
+    <span>Commercial and EAR99 work only. This page is not listed in search engines.</span>
   </div>
 </footer>
 
