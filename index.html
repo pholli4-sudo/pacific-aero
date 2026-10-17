@@ -54,16 +54,17 @@
     .hero { padding-block: clamp(56px, 9vw, 120px) 0; overflow: hidden; }
     .hero h1 { font-size: clamp(38px, 6.4vw, 80px); max-width: 26ch; }
     .hero .rule { width: 72px; height: 4px; background: var(--orange); margin: 32px 0 28px; }
-    .hero .row { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 24px 64px; align-items: end; }
-    @media (max-width: 760px) { .hero .row { grid-template-columns: 1fr; } }
+    .hero .split { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 32px 56px; align-items: center; }
+    @media (max-width: 760px) { .hero .split { grid-template-columns: 1fr; } }
     .hero .sub { font-size: clamp(18px, 2.2vw, 22px); color: var(--steel); max-width: 60ch; margin: 0; }
-    .hero .actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; font-family: var(--f-ui); justify-content: flex-start; }
-    @media (min-width: 761px) { .hero .actions { justify-content: flex-end; } }
+    .hero .actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; font-family: var(--f-ui); margin-top: 28px; }
     .btn { display: inline-block; font: 600 13px/1 var(--f-ui); letter-spacing: .08em; text-transform: uppercase; text-decoration: none; padding: 14px 18px; border: 1.5px solid var(--navy); color: var(--navy); }
     .btn.solid { background: var(--navy); color: #fff; }
     .btn:hover, .btn:focus-visible { border-color: var(--orange); }
     .btn.solid:hover, .btn.solid:focus-visible { background: #123059; }
-    .bridge { display: block; width: 100%; height: auto; margin-top: clamp(40px, 6vw, 80px); color: var(--navy); }
+    .bridge { display: block; width: 100%; max-width: 100%; height: auto; color: var(--navy); }
+    @media (max-width: 760px) { .bridge { max-width: 420px; margin: 8px auto 0; } }
+    .hero { padding-bottom: clamp(40px, 6vw, 72px); }
 
     /* sections */
     section { padding-block: clamp(56px, 8vw, 104px); border-top: 1px solid var(--mist); }
@@ -163,28 +164,28 @@
 <main id="top">
   <div class="hero">
     <div class="wrap">
-      <span class="eyebrow">Supplier representation · United States</span>
-      <h1>Winning American awards for China's best manufacturers.</h1>
-      <div class="rule"></div>
-      <div class="row">
-        <p class="sub">Pacific Aero Partners represents a small number of qualified Chinese suppliers to US industrial buyers in aerospace, gas turbines, power and energy equipment. We build the relationships, carry you through supplier approval, and stay with the account long after the award.</p>
-        <div class="actions">
-          <a class="btn solid" href="#contact">Enquire about representation</a>
-          <a class="btn" href="#process">How an award happens</a>
+      <div class="split">
+        <div>
+          <span class="eyebrow">Supplier representation · United States</span>
+          <h1>Winning American awards for China's best manufacturers.</h1>
+          <div class="rule"></div>
+          <p class="sub">Pacific Aero Partners represents a small number of qualified Chinese suppliers to US industrial buyers in aerospace, gas turbines, power and energy equipment. We build the relationships, carry you through supplier approval, and stay with the account long after the award.</p>
+          <div class="actions">
+            <a class="btn solid" href="#contact">Enquire about representation</a>
+            <a class="btn" href="#process">How an award happens</a>
+          </div>
         </div>
+        <svg class="bridge" viewBox="0 0 1200 250" role="img" aria-label="Line drawing of a suspension bridge">
+          <g fill="none" stroke="currentColor" stroke-linecap="round">
+            <path d="M100 152.2V180M200 108.9V180M350 74.4V180M400 94.4V180M450 110V180M500 121.1V180M550 127.8V180M600 130V180M650 127.8V180M700 121.1V180M750 110V180M800 94.4V180M850 74.4V180M1000 108.9V180M1100 152.2V180" stroke-width="2"/>
+            <path d="M0 180H1200" stroke-width="5"/>
+            <path d="M0 180Q150 150 300 50Q600 210 900 50Q1050 150 1200 180" stroke-width="4.5"/>
+            <path d="M0 232H1200" stroke-width="2" stroke-dasharray="1 10" opacity=".55"/>
+          </g>
+          <rect x="293" y="40" width="14" height="168" rx="2" fill="currentColor"/>
+          <rect x="893" y="40" width="14" height="168" rx="2" fill="currentColor"/>
+        </svg>
       </div>
-    </div>
-    <div class="wrap">
-      <svg class="bridge" viewBox="0 0 1200 250" role="img" aria-label="Line drawing of a suspension bridge">
-        <g fill="none" stroke="currentColor" stroke-linecap="round">
-          <path d="M100 152.2V180M200 108.9V180M350 74.4V180M400 94.4V180M450 110V180M500 121.1V180M550 127.8V180M600 130V180M650 127.8V180M700 121.1V180M750 110V180M800 94.4V180M850 74.4V180M1000 108.9V180M1100 152.2V180" stroke-width="2"/>
-          <path d="M0 180H1200" stroke-width="5"/>
-          <path d="M0 180Q150 150 300 50Q600 210 900 50Q1050 150 1200 180" stroke-width="4.5"/>
-          <path d="M0 232H1200" stroke-width="2" stroke-dasharray="1 10" opacity=".55"/>
-        </g>
-        <rect x="293" y="40" width="14" height="168" rx="2" fill="currentColor"/>
-        <rect x="893" y="40" width="14" height="168" rx="2" fill="currentColor"/>
-      </svg>
     </div>
   </div>
 
